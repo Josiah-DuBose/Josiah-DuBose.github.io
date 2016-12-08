@@ -1,6 +1,52 @@
+body{
+    background-color: #F2F2F3;
+}
+
 .top{
     width: 100%;
-    position: relative;
-    background-color: #B1EBED
+    height: 300%;
+    background-color: #7597CF;
     border: solid #D2E0E0 1px;
+    position: relative;
+}
+
+.left{
+    float: left;
+    height: 50%;
+    width: 60px;
+}
+
+.right{
+    float: right;
+}
+
+#name{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#exper{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 20%;
+    height: 400px;
+    background-color: #7597CF;
+    border: solid #D2E0E0 1px;
+    position: relative;
+}
+
+#header{
+    text-align: center;
+}
+
+.jobs{
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+    font-style: italic;
+
 }
