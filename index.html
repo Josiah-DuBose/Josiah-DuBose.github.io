@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Main Page</title>
+        <script src="https://use.fontawesome.com/43d98b926b.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         rel="stylesheet" >
         <link rel="stylesheet" href="index.css">
@@ -10,25 +11,191 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="row">
-                        <h1>Josiah DuBose</h1>
-                        <h4>Software Developer</h4>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button id="projects" class="btn btn-default">Portfolio</button>
-                            <button href="resume.html" id="resumeButton" class="btn btn-default" >Resume</button>
-                            <button id="contact" class="btn btn-default">Contact</button>
-                        </div>
 
-                        <div class=row>
-                            <iframe id="resume" src="resume.pdf"></iframe>
+                <div class="col-md-12">
+                    <div class="rowPgHeader">
+
+                        <h1 class="headerPage">Josiah DuBose</h1>
+                        <h4 class="headerPage">Junior Software Developer</h4>
+
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button id="bioButton" class="btn btn-default">About Me</button>
+                            <button id="projects" class="btn btn-default">Portfolio</button>
+                            <button id="resumeButton" class="btn btn-default">Resume</button>
+                            <button id="contactPop" class="btn btn-default"data-toggle="modal"
+                                data-target="#contact_modal">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of container one -->
+
+        <div class="rowDivider"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="imgCol">
+                    <div class="rowAbout" id="about">
+                        <h1 class="headerAbout">Bio</h1>
+                        <img class="headShot" src="DSC_0160 copy.jpg" alt="headshot">
+                    </div>
+                </div>
+                <div class="col-md-6" id="bio">
+                    <div class="row">
+                        <h2 class="headerBio">a little bit about me...</h2>
+                        <p class="bioPara">
+                            I was rasied in Asheville, North Carolina. And yes
+                            that means I love craft beer. Over the last few years
+                            I've been searching for my calling and I've finally
+                            found writing code. I'm absolutly in love with what
+                            I do, epsecially building web apps and databases. My past
+                            job experience has helped me to become a great communicater,
+                            time manager, and self starter. If your looking for
+                            someone who's passionet, easy to work around, loves
+                            solving problems, and enjoys fantastic IPAs click
+                            the email me button!
+                        </p>
+                        <button class='contactButton' href="mailto:josiah7686@gmail.com?Subject=Hello"
+                        target="_top" type="button" name="button">Email Me</button>
+
+                        <!-- Badges Container -->
+                        <div class="badge-container">
+                            <!-- Title Markup -->
+                            <h1 id="treehouse-count"></h1>
+                            <!-- ul tag where badge li's are appended -->
+                            <ul id="badges"></ul>
                         </div>
 
                     </div>
                 </div>
             </div>
+        </div> <!-- end of container two -->
+
+        <div class="rowDivider"></div>
+
+        <div class="rowResume" id="resume_section">
+            <h1 class="headerRe">Resume</h1>
+            <iframe id="resume" src="resume.pdf"></iframe>
         </div>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <div class="rowDivider"></div>
+        <div class="container">
+            <div class="rowPort" id="portfolio_section">
+                <h1 class="headerPro">Projects</h1>
+
+                <div class="col-md-5" id="projectDetails">
+                    <h3 class="procHeader">Question Box</h3>
+                    <img class="procImg" src="Question_box.png" alt="screenshot">
+                    <br>
+                    <br>
+                    <h4 class="procDes">
+                        a question and answer app for users
+                        of all kinds. It allows user creation, question and
+                        answer posting, and answer voting. Built using
+                        Django Rest Framework, PostgreSQL, and Handlebars.
+                        <br>
+                        <br>
+                        <a href="#"> -See Code- </a> <a href="#"> -Try App-</a>
+                    </h4>
+                </div>
+
+                <div class="col-md-5" id="projectDetails">
+                    <h3 class="procHeader">Question Box</h3>
+                    <img class="procImg" src="Question_box.png" alt="screenshot">
+                    <br>
+                    <br>
+                    <h4 class="procDes">
+                        a question and answer app for users
+                        of all kinds. It allows user creation, question and
+                        answer posting, and answer voting. Built using
+                        Django Rest Framework, PostgreSQL, and Handlebars.
+                        <br>
+                        <br>
+                        <a href="#">Code </a> <a href="#"> App</a>
+                    </h4>
+                </div>
+            </div>
+
+            <div class="rowPort" id="portfolio_section">
+
+                <div class="col-md-5" id="projectDetails">
+                    <h3 class="procHeader">Question Box</h3>
+                    <img class="procImg" src="Question_box.png" alt="screenshot">
+                    <br>
+                    <br>
+                    <h4 class="procDes">
+                        a question and answer app for users
+                        of all kinds. It allows user creation, question and
+                        answer posting, and answer voting. Built using
+                        Django Rest Framework, PostgreSQL, and Handlebars.
+                        <br>
+                        <br>
+                        <a href="#">Code </a> <a href="#"> App</a>
+                    </h4>
+                </div>
+
+                <div class="col-md-5" id="projectDetails">
+                    <h3 class="procHeader">Question Box</h3>
+                    <img class="procImg" src="Question_box.png" alt="screenshot">
+                    <br>
+                    <br>
+                    <h4 class="procDes">
+                        a question and answer app for users
+                        of all kinds. It allows user creation, question and
+                        answer posting, and answer voting. Built using
+                        Django Rest Framework, PostgreSQL, and Handlebars.
+                        <br>
+                        <br>
+                        <a href="#">Code </a> <a href="#"> App</a>
+                    </h4>
+                </div>
+            </div>
+        </div> <!--end of container three -->
+        <div class="modal fade" id="contact_modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="headerModal">Contact</h2>
+                    </div>
+                    <div class="modal-body">
+                        <a href="mailto:josiah7686@gmail.com?Subject=Hello" target="_top">
+                            <h2>
+                                <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+                                josiah7686@gmail.com
+                            </h2>
+                        </a>
+                        <h2><i class="fa fa-phone fa-1x" aria-hidden="true"></i> (828) 216-6019</h2>
+                        <br>
+
+                        <a class="icon" href="https://github.com/Josiah-DuBose">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="icon" href="https://www.facebook.com/josiah.dubose">
+                            <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="icon" href="https://www.linkedin.com/in/josiah-dubose-4469ba107">
+                            <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="icon" href="https://www.instagram.com/josiah_dubose/">
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                        </a>
+
+                        <a class="icon" href="https://twitter.com/josiah_dubose">
+                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end modal -->
+
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="index.js"></script>
     </body>

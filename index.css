@@ -1,24 +1,136 @@
-.row{
+.rowPgHeader{
+    margin-top: 20%;
     text-align: center;
-    margin-top: 8%;
 }
 
-h1{
-    font-size: 50px;
+body{
+    background-color: #DDDEE0;
 }
 
-h2{
-    text-align: left;
-    border-bottom: solid grey 1px;
-    background-color: #F5592F;
+
+.headerAbout{
+    margin-top: 1px;
 }
+
+
+.headerBio{
+    margin-top: 50%;
+}
+
 
 #link{
     background-color: #E0E0DE;
 }
 
 
-#resume{
-    height: 100%;
-    width: 100%;
+.rowDivider{
+    margin-top: 30%;
+    border-top: solid grey 3px;
 }
+
+
+#resume{
+    height: 1400px;
+    width: 100%;
+
+}
+
+/*about me section*/
+
+#imgCol{
+    margin-top: 1%;
+}
+#bio{
+    margin-left: -10%;
+    margin-top: -20%;
+}
+
+.bioPara{
+    font-size: 22px;
+}
+
+.headShot{
+    border-radius: 1000px;
+    border: solid white 5px;
+}
+
+.contactButton{
+    border-radius: 3px;
+    border: solid white 1px;
+    background-color: #1B54FA;
+}
+
+
+.procImg{
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.procHeader{
+    text-align: left;
+    font-weight: bold;
+
+}
+
+
+.procDes{
+    background-color: #F0F0F2;
+    padding: 3%;
+    border-radius: 3px;
+}
+
+/* modal css */
+.headerModal{
+    margin-top: -1%;
+    text-align: left;
+}
+
+
+.modal-header{
+    border: 0;
+    text-align: left;
+}
+
+
+.modal-body{
+    margin-top: -3%;
+    text-align: center;
+}
+
+.icon{
+    margin-left: 20px;
+}
+
+.col-md-5{
+    margin-left: 6%;
+}
+
+
+/*badges CSS*/
+
+/* Controls width of the widget */
+.badge-container {width:700px; margin: 0 auto;}
+
+/* Makes Badges display inline */
+#badges li { display: inline;}
+
+/* Controls badges size and alignment */
+#badges li img {
+  width: 60px;
+  margin:-17px 2px 0px 0px;
+}
+
+/* Controls badges row offset */
+#badges li:nth-child(20n+11) {margin-left:30px;}
+
+/* Controls Header Formatting */
+.badge-container h1 {
+  text-align:center;
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Controls badges on-hover opacity */
+#badges li img:hover {opacity:.7;}
