@@ -19,7 +19,7 @@ function scrollBio(){
         scrollTop: $("#about").offset().top
     }, 1);
 }
-$("#bio").click(scrollBio)
+$("#bioButton").click(scrollBio)
 
 
 
@@ -32,8 +32,8 @@ $(document).ready(function () {
   var e = "josiahdubose",
 
   // Treehouse Json
-  t = "http://teamtreehouse.com/" + e + ".json",
- 
+  t = "https://teamtreehouse.com/" + e + ".json",
+
   // Badges JQuery Identifier
   n = $("#badges"),
 
