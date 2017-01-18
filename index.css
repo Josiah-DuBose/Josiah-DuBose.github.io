@@ -1,10 +1,70 @@
-.rowPgHeader{
-    margin-top: 20%;
-    text-align: center;
+/*header, body and text formating for entire page */
+.headerRow{
+    text-align: left;
+    font-weight: bold;
+    border-radius: 10px;
+    }
+
+.textHeader{
+    padding: 1%;
+    font-weight: bold;
+    font-family: monospace;
 }
 
 body{
     background-color: #DDDEE0;
+
+}
+
+/*header section*/
+
+.pgHeaderRow{
+    margin-top: 15%;
+    text-align: center;
+}
+
+.headerPage{
+    font-family: monospace;
+}
+
+.textPgHeader{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 65px;
+}
+
+
+.rowNav{
+    text-align: center;
+
+}
+
+.btn, btn-default{
+    border: solid #CACACA 1px;
+    background-color: #DDDEE0;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+.ImgRow{
+    text-align: center;
+
+}
+
+#mainImg{
+    border-radius: 5px;
+
+}
+
+
+/*about me section*/
+.rowBio{
+
+    margin-top: 48%;
+
 }
 
 
@@ -17,41 +77,54 @@ body{
     margin-top: 50%;
 }
 
-
-#link{
-    background-color: #E0E0DE;
+.link{
+    color: black;
+    font-weight: bold;
 }
 
-
-.rowDivider{
-    margin-top: 30%;
-    border-top: solid grey 3px;
-}
-
-
-#resume{
-    height: 1400px;
-    width: 100%;
-
-}
-
-/*about me section*/
 
 #imgCol{
     margin-top: 1%;
 }
+
+
+#tiyLogo:hover{
+    opacity:.7;
+}
+
+
+#backendLogo{
+    margin-left: -2%;
+}
+
+
+#backendLogo:hover{
+    opacity:.7;
+}
+
+
 #bio{
     margin-left: -10%;
     margin-top: -20%;
 }
 
+
 .bioPara{
     font-size: 22px;
+    background-color: #CACACA;
+    border-radius: 10px;
+    padding: 2%;
 }
+
 
 .headShot{
     border-radius: 1000px;
-    border: solid white 5px;
+}
+
+.skillText{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 1%;
 }
 
 .contactButton{
@@ -61,24 +134,42 @@ body{
 }
 
 
+.contactButton:hover{
+    background-color: white;
+}
+
+
+/*resume section*/
+.rowResume{
+    margin-top: 6%;
+}
+
+
+#resume{
+    height: 1400px;
+    width: 100%;
+}
+
+
+/*project section*/
+.rowProjects{
+    /*border-top: solid grey 3px;*/
+    margin-top: 6%;
+}
+
+
 .procImg{
     border-radius: 50%;
     text-align: center;
 }
 
 
-.procHeader{
-    text-align: left;
-    font-weight: bold;
-
-}
-
-
 .procDes{
-    background-color: #F0F0F2;
+    background-color: #CACACA;
     padding: 3%;
     border-radius: 3px;
 }
+
 
 /* modal css */
 .headerModal{
@@ -98,39 +189,29 @@ body{
     text-align: center;
 }
 
+
 .icon{
     margin-left: 20px;
 }
+
 
 .col-md-5{
     margin-left: 6%;
 }
 
 
-/*badges CSS*/
-
-/* Controls width of the widget */
-.badge-container {width:700px; margin: 0 auto;}
-
-/* Makes Badges display inline */
-#badges li { display: inline;}
-
-/* Controls badges size and alignment */
-#badges li img {
-  width: 60px;
-  margin:-17px 2px 0px 0px;
+.linkPro{
+    border: solid #CACACA 1px;
+    background-color: #DDDEE0;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
 }
 
-/* Controls badges row offset */
-#badges li:nth-child(20n+11) {margin-left:30px;}
-
-/* Controls Header Formatting */
-.badge-container h1 {
-  text-align:center;
-  font-family: 'Helvetica Neue', helvetica, sans-serif;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
+.textHeader-contact{
+    padding: 1%;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: -1%;
 }
-
-/* Controls badges on-hover opacity */
-#badges li img:hover {opacity:.7;}

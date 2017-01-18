@@ -7,17 +7,20 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         rel="stylesheet" >
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="js/reportcard/badges.css">
     </head>
     <body>
-        <div class="container">
+        <div class="containerHeader">
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="rowPgHeader">
-
-                        <h1 class="headerPage">Josiah DuBose</h1>
-                        <h4 class="headerPage">Junior Software Developer</h4>
-
+                        <div class="pgHeaderRow">
+                            <h1 class="textPgHeader">Josiah DuBose</h1>
+                            <h4 class="headerPage">Junior Software Developer</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="rowNav">
                         <div class="btn-group" role="group" aria-label="...">
                             <button id="bioButton" class="btn btn-default">About Me</button>
                             <button id="projects" class="btn btn-default">Portfolio</button>
@@ -26,100 +29,163 @@
                                 data-target="#contact_modal">Contact</button>
                         </div>
                     </div>
+                    <br>
+
+                    <!-- <div class="ImgRow">
+                        <img id="mainImg" src="mykeyboard.jpg" alt="">
+
+                    </div> -->
+                    <br>
                 </div>
             </div>
         </div> <!-- end of container one -->
 
-        <div class="rowDivider"></div>
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-6" id="imgCol">
-                    <div class="rowAbout" id="about">
-                        <h1 class="headerAbout">Bio</h1>
-                        <img class="headShot" src="DSC_0160 copy.jpg" alt="headshot">
-                    </div>
+            <div class="rowBio">
+                <div id="about" class="headerRow">
+                    <h1 class="textHeader">>Bio</h1>
                 </div>
-                <div class="col-md-6" id="bio">
-                    <div class="row">
-                        <h2 class="headerBio">a little bit about me...</h2>
-                        <p class="bioPara">
-                            I was rasied in Asheville, North Carolina. And yes
-                            that means I love craft beer. Over the last few years
-                            I've been searching for my calling and I've finally
-                            found writing code. I'm absolutly in love with what
-                            I do, epsecially building web apps and databases. My past
-                            job experience has helped me to become a great communicater,
-                            time manager, and self starter. If your looking for
-                            someone who's passionet, easy to work around, loves
-                            solving problems, and enjoys fantastic IPAs click
-                            the email me button!
-                        </p>
-                        <button class='contactButton' href="mailto:josiah7686@gmail.com?Subject=Hello"
-                        target="_top" type="button" name="button">Email Me</button>
+                <div class="row">
+                    <div class="col-md-6" id="imgCol">
+                        <div class="rowAbout" >
+                            <img class="headShot" src="DSC_0160 copy.jpg" alt="headshot">
+                            <div class="rowEdu">
+                                <br>
+                                <a class="link" href="https://www.theironyard.com/">
+                                    <img id="tiyLogo" src="tiy-logo.png">
+                                    Visit TIY website</a>
+                                <br>
+                                <a class="link" href="https://www.theironyard.com/courses">
+                                    <img id="backendLogo" src="icon-back-end-engineering.png">
+                                    See Descriptions of TIY back-end courses</a>
+                                <br>
+                                <div class="skills">
+                                    <h2 class="textHeader">Skills:</h2>
+                                    <h5 class="skillText">Python</h5>
+                                    <h5 class="skillText">JavaScript</h5>
+                                    <h5 class="skillText">Django</h5>
+                                    <h5 class="skillText">Handlebars</h5>
+                                    <h5 class="skillText">HTML</h5>
+                                    <h5 class="skillText">Relational Databases</h5>
+                                    <h5 class="skillText">Rest APIs</h5>
+                                    <h5 class="skillText">Agile Development</h5>
+                                    <h5 class="skillText">PostgresSQL</h5>
+                                    <h5 class="skillText">Git</h5>
+                                </div>
+                            </div>
 
-                        <!-- Badges Container -->
-                        <div class="badge-container">
-                            <!-- Title Markup -->
-                            <h1 id="treehouse-count"></h1>
-                            <!-- ul tag where badge li's are appended -->
-                            <ul id="badges"></ul>
                         </div>
+                    </div>
 
+                    <div class="col-md-6" id="bio">
+                        <div class="row">
+                            <h2 class="headerBio">a little bit about me...</h2>
+                            <p class="bioPara">
+                                Before making the switch to software development,
+                                I was a chef and most recently a motorcycle tech.
+                                Both of these jobs taught me organization,
+                                self-motivation, and attention to detail. I've always
+                                been good at keeping on task and pushing hard
+                                until the project is complete. I'm a bit of a
+                                autodidact so learning new skills is not a
+                                problem. I also greatly
+                                enjoy working on new, and different problems
+                                everyday. For these and also many other reasons,
+                                software development is extremely exciting
+                                and a perfect fit for me. I can't wait to join
+                                a productive, fun team that produces beautiful,
+                                powerful products.
+                            </p>
+                            <a href="mailto:josiah7686@gmail.com?Subject=Hello"
+                            target="_top"><button class="btn btn-default"
+                            type="button" name="button">Email Me</button></a>
+
+                            <a><button class="btn btn-default" type="button"
+                                data-toggle="modal" data-target="#callMeModal"
+                                name="button">Call Me</button></a>
+
+                            <a href="#" target="_top">
+                                <button id="resumebutton" class="btn btn-default"
+                                type="button" name="button">See Resume</button></a>
+
+
+                            <div class="report-card treehouse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of container two -->
+        </div>
+        <!-- <div class="rowDivider"></div> -->
+
+        <div class="container">
+            <div class="rowResume" id="resume_section">
+                <div class="headerRow">
+                    <h1 class="textHeader">>Resume</h1>
+                </div>
+                <br>
+                <br>
+                <iframe id="resume" src="resume.pdf"></iframe>
+            </div>
+        </div> <!-- end resume container -->
+
+
+        <div class="container">
+            <div class="rowProjects" id="portfolio_section">
+                <div class="headerRow">
+                    <h1 class="textHeader">Projects</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-5" id="projectDetails">
+                        <h3 class="textHeader">Question Box</h3>
+                        <img class="procImg" src="Question_box.png" alt="screenshot">
+                        <br>
+                        <br>
+                        <h4 class="procDes">
+                            a question and answer app for users
+                            of all kinds. It allows user creation, question and
+                            answer posting, and answer voting. Built using
+                            Django Rest Framework, PostgreSQL, and Handlebars.
+                            <br>
+                            <br>
+                        </h4>
+                        <a href="#" target="_top">
+                            <button class="btn btn-default" type="button"
+                            name="button">See Code</button></a>
+                        <a href="#" target="_top">
+                            <button class="btn btn-default" type="button"
+                            name="button">Go to the App</button></a>
+                    </div>
+
+                    <div class="col-md-5" id="projectDetails">
+                        <h3 class="textHeader">Question Box</h3>
+                        <img class="procImg" src="Question_box.png" alt="screenshot">
+                        <br>
+                        <br>
+                        <h4 class="procDes">
+                            a question and answer app for topics
+                            of all kinds. It allows user creation, question and
+                            answer posting, and answer voting. Built on a two
+                            person team using Django Rest Framework, PostgreSQL,
+                            and Handlebars.
+                            <br>
+                            <br>
+                        </h4>
+                        <a href="#" target="_top">
+                            <button class="btn btn-default" type="button"
+                            name="button">See Code</button></a>
+                        <a href="#" target="_top">
+                            <button class="btn btn-default" type="button"
+                            name="button">Go to the App</button></a>
                     </div>
                 </div>
             </div>
-        </div> <!-- end of container two -->
 
-        <div class="rowDivider"></div>
-
-        <div class="rowResume" id="resume_section">
-            <h1 class="headerRe">Resume</h1>
-            <iframe id="resume" src="resume.pdf"></iframe>
-        </div>
-
-        <div class="rowDivider"></div>
-        <div class="container">
-            <div class="rowPort" id="portfolio_section">
-                <h1 class="headerPro">Projects</h1>
-
-                <div class="col-md-5" id="projectDetails">
-                    <h3 class="procHeader">Question Box</h3>
-                    <img class="procImg" src="Question_box.png" alt="screenshot">
-                    <br>
-                    <br>
-                    <h4 class="procDes">
-                        a question and answer app for users
-                        of all kinds. It allows user creation, question and
-                        answer posting, and answer voting. Built using
-                        Django Rest Framework, PostgreSQL, and Handlebars.
-                        <br>
-                        <br>
-                        <a href="#"> -See Code- </a> <a href="#"> -Try App-</a>
-                    </h4>
-                </div>
-
-                <div class="col-md-5" id="projectDetails">
-                    <h3 class="procHeader">Question Box</h3>
-                    <img class="procImg" src="Question_box.png" alt="screenshot">
-                    <br>
-                    <br>
-                    <h4 class="procDes">
-                        a question and answer app for users
-                        of all kinds. It allows user creation, question and
-                        answer posting, and answer voting. Built using
-                        Django Rest Framework, PostgreSQL, and Handlebars.
-                        <br>
-                        <br>
-                        <a href="#">Code </a> <a href="#"> App</a>
-                    </h4>
-                </div>
-            </div>
 
             <div class="rowPort" id="portfolio_section">
 
                 <div class="col-md-5" id="projectDetails">
-                    <h3 class="procHeader">Question Box</h3>
+                    <h3 class="textHeader">Question Box</h3>
                     <img class="procImg" src="Question_box.png" alt="screenshot">
                     <br>
                     <br>
@@ -130,12 +196,17 @@
                         Django Rest Framework, PostgreSQL, and Handlebars.
                         <br>
                         <br>
-                        <a href="#">Code </a> <a href="#"> App</a>
                     </h4>
+                    <a href="#" target="_top">
+                        <button class="btn btn-default" type="button"
+                        name="button">See Code</button></a>
+                    <a href="#" target="_top">
+                        <button class="btn btn-default" type="button"
+                        name="button">Go to the App</button></a>
                 </div>
 
                 <div class="col-md-5" id="projectDetails">
-                    <h3 class="procHeader">Question Box</h3>
+                    <h3 class="textHeader">Question Box</h3>
                     <img class="procImg" src="Question_box.png" alt="screenshot">
                     <br>
                     <br>
@@ -146,11 +217,17 @@
                         Django Rest Framework, PostgreSQL, and Handlebars.
                         <br>
                         <br>
-                        <a href="#">Code </a> <a href="#"> App</a>
                     </h4>
+                    <a href="#" target="_top">
+                        <button class="btn btn-default" type="button"
+                        name="button">See Code</button></a>
+                    <a href="#" target="_top">
+                        <button class="btn btn-default" type="button"
+                        name="button">Go to the App</button></a>
                 </div>
             </div>
         </div> <!--end of container three -->
+
         <div class="modal fade" id="contact_modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -159,7 +236,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                         </button>
-                        <h2 class="headerModal">Contact</h2>
+                        <div class="headerRow">
+                            <h1 class="textHeader-contact">Contact</h1>
+                        </div>
                     </div>
                     <div class="modal-body">
                         <a href="mailto:josiah7686@gmail.com?Subject=Hello" target="_top">
@@ -195,8 +274,36 @@
             </div>
         </div> <!-- end modal -->
 
+        <div class="modal fade" id="callMeModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="col-md-6">
+                            <h3 class="textHeader-contact">Phone Number</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <h2><i class="fa fa-phone fa-1x" aria-hidden="true"></i> (828) 216-6019</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="index.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/reportcard/reportcard.js"></script>
+            <script>
+                $('.report-card.treehouse').reportCard({
+                    userName: 'josiahdubose',
+                    site: 'treehouse',
+                    badgesAmount: 10
+                });
+            </script>
     </body>
 </html>
