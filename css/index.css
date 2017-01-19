@@ -39,6 +39,7 @@
     text-align: center;
 }
 
+
 .headerPage{
     font-family: monospace;
     color: black;
@@ -79,11 +80,6 @@
 
 }
 
-#mainImg{
-    border-radius: 5px;
-
-}
-
 
 /*about me section*/
 .rowBio{
@@ -99,7 +95,9 @@
 
 
 .headerBio{
-    margin-top: 50%;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 40%;
 }
 
 .link{
@@ -135,16 +133,16 @@
 
 
 .bioPara{
+    margin-top: -2%;
     font-size: 22px;
-    background-color: #CACACA;
     border-radius: 10px;
     padding: 2%;
 }
 
-
-.headShot{
-    border-radius: 1000px;
+.skills{
+    margin-top: 10%;
 }
+
 
 .skillText{
     font-weight: bold;
@@ -184,7 +182,7 @@
 
 
 .procImg{
-    border-radius: 50%;
+    height: 200px;
     text-align: center;
 }
 
@@ -193,6 +191,14 @@
     background-color: #CACACA;
     padding: 3%;
     border-radius: 3px;
+}
+
+.row-port-two{
+    margin-top:30%;
+}
+
+.more{
+    margin-top: 10%;
 }
 
 
