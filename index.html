@@ -10,10 +10,10 @@
         <link rel="stylesheet" href="js/reportcard/badges.css">
     </head>
     <body>
-        <div class="containerHeader">
+        <div class="container-header">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="containerInfo">
+                    <div class="container-info">
                         <h1 class="textPgHeader">Josiah DuBose</h1>
                         <h4 class="headerPage">Junior Software Developer</h4>
                         <br>
@@ -32,11 +32,13 @@
         </div> <!-- end of container one -->
 
 
-        <div class="containerBio">
-            <div class="rowBio">
+        <div class="container-bio">
+            <div class="row-bio">
+
                 <div id="about" class="headerRow">
                     <h1 class="textHeader">>Bio</h1>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6" id="imgCol">
                         <div class="rowAbout" >
@@ -107,7 +109,7 @@
         </div>
 
 
-        <div class="container">
+        <div class="container-resume">
             <div class="rowResume" id="resume_section">
                 <div class="headerRow">
                     <h1 class="textHeader">>Resume</h1>
@@ -119,21 +121,20 @@
         </div> <!-- end resume container -->
 
 
-        <div class="container">
+        <div class="container-projects">
 
             <div class="headerRow">
                 <h1 class="textHeader">Projects</h1>
             </div>
 
-            <div class="rowPort" id="portfolio_section">
+            <div class="row-projects" id="portfolio_section">
 
                 <div class="project" id="projectDetails">
                     <h3 class="textHeader">Bike MD</h3>
-                    <img class="procImg" src="bikeLogin.png" alt="screenshot">
-                    <img class="procImg" src="bikeMainPg.png" alt="screenshot">
-                    <img class="procImg" src="bikeMDBike.png" alt="screenshot">
-                    <br>
-                    <br>
+                    <a href="http://bike-md.herokuapp.com/"><img class="procImg"
+                    src="bikeLogin.png" alt="screenshot"></a>
+                    <!-- <img class="procImg" src="bikeMainPg.png" alt="screenshot"> -->
+                    <!-- <img class="procImg" src="bikeMDBike.png" alt="screenshot"> -->
                     <h4 class="procDes">
                         Bike MD is a community of motorcycle technicians, a
                         place where they can connect with each other and ask
@@ -143,9 +144,7 @@
                         for the Iron Yard. It was built by me and two UI/UX
                         developers over a three week period. I was the team
                         lead, concept creator, and solo backend/JavaScript
-                        engineer.
-                        <br>
-                        <br>
+                        engineer. Hosted on Heroku.
                     </h4>
                     <a href="https://github.com/bike-md/bike_md" target="_top">
                         <button class="btn btn-default" type="button"
@@ -157,9 +156,8 @@
 
                 <div class="project" id="projectDetails">
                     <h3 class="textHeader">Dead Story</h3>
-                    <img class="procImg" src="dead_story_screen.png" alt="screenshot">
-                    <br>
-                    <br>
+                    <a href="https://dead-story.herokuapp.com/dead/"><img class="procImg" src="dead_story_screen.png"
+                    alt="screenshot"></a>
                     <h4 class="procDes">
                         Built during a short Hackithon with UI/UX students
                         from TIY Raleigh.
@@ -167,9 +165,7 @@
                         adventure game. Ours has a zombie theme and the goal is
                         to get to the bar and have a drink!
                         Django Rest Framework, PostgreSQL, JavaScript and
-                        Handlebars.
-                        <br>
-                        <br>
+                        Handlebars. Hosted on Heroku.
                     </h4>
                     <a href="https://github.com/teamDead/dead_story" target="_top">
                         <button class="btn btn-default" type="button"
@@ -180,17 +176,14 @@
                 </div>
             </div> <!-- end of row one -->
 
-            <div class="row-port-two" id="portfolio_section">
-
-
             <div class="project" id="projectDetails">
-                <div class="project" id="projectDetails">
-                    <h4 class="more">**More projects to be added soon</h4>
-                </div>
-            </div>
-            </div>
-        </div>
+                    <h4 class="textHeader">**More projects to be added soon</h4>
+            </div> <!-- end row two -->
 
+        </div> <!-- end project section -->
+
+
+        <!--Modals-->
         <div class="modal fade" id="contact_modal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -260,7 +253,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- end modal -->
 
             <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

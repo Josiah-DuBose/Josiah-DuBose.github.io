@@ -1,17 +1,10 @@
 /*header, body and text formating for entire page */
-
-.containerHeader{
-    background-image: url("../Background_Image.jpg");
-    height:675px;
-    background-size:cover;
-    background-position:center;
-}
-
 .headerRow{
     text-align: left;
     font-weight: bold;
     border-radius: 10px;
     }
+
 
 .textHeader{
     padding: 1%;
@@ -19,7 +12,22 @@
     font-family: monospace;
 }
 
-.containerInfo{
+
+.navRow{
+    text-align: center;
+}
+
+
+/*header section*/
+.container-header{
+    background-image: url("../Background_Image.jpg");
+    height:675px;
+    background-size:cover;
+    background-position:center;
+}
+
+
+.container-info{
     margin-top: 15%;
     padding:2%;
     background-color:rgba(255,255,255, .7);
@@ -29,11 +37,6 @@
     margin-left: 25%;
 }
 
-.navRow{
-    text-align: center;
-}
-
-/*header section*/
 
 .pgHeaderRow{
     text-align: center;
@@ -45,6 +48,7 @@
     color: black;
     font-weight: bold;
 }
+
 
 .textPgHeader{
     margin-top: -2%;
@@ -69,28 +73,13 @@
 
 }
 
-.containerBio{
-    margin-top: -46%;
-    padding: 2%;
-    margin-left: 3%;
-}
-
-.ImgRow{
-    text-align: center;
-
-}
-
 
 /*about me section*/
-.rowBio{
 
-    margin-top: 48%;
-
-}
-
-
-.headerAbout{
-    margin-top: 1px;
+.container-bio{
+    margin-top: 2%;
+    padding: 2%;
+    margin-left: 3%;
 }
 
 
@@ -99,6 +88,7 @@
     font-weight: bold;
     margin-top: 40%;
 }
+
 
 .link{
     color: black;
@@ -139,6 +129,7 @@
     padding: 2%;
 }
 
+
 .skills{
     margin-top: 10%;
 }
@@ -149,6 +140,7 @@
     font-size: 18px;
     margin-left: 1%;
 }
+
 
 .contactButton{
     border-radius: 3px;
@@ -175,13 +167,16 @@
 
 
 /*project section*/
-.rowProjects{
-    /*border-top: solid grey 3px;*/
-    margin-top: 6%;
+.container-projects{
+    padding:5%;
 }
 
-.project{
 
+.project{
+    width: 42%;
+    display: inline-block;
+    margin-left: 7%;
+    padding: 1%;
 }
 
 
@@ -192,14 +187,14 @@
 
 
 .procDes{
-    background-color: #CACACA;
-    padding: 3%;
-    border-radius: 3px;
+    padding: 2%;
 }
+
 
 .row-port-two{
     margin-top:1%;
 }
+
 
 .more{
     margin-top: 10%;
@@ -243,6 +238,7 @@
     font-style: italic;
     font-size: 18px;
 }
+
 
 .textHeader-contact{
     padding: 1%;
