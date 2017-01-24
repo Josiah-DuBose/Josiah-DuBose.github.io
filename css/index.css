@@ -70,8 +70,9 @@
     font-family: monospace;
     font-weight: bold;
     font-size: 18px;
-
 }
+
+
 
 
 /*about me section*/
@@ -168,14 +169,29 @@
 
 /*project section*/
 .container-projects{
-    padding:5%;
+    padding:2%;
+
+}
+
+.row-projects{
+    display:inline-block;
+    margin-top: -2%;
 }
 
 
-.project{
+.project-left{
     width: 42%;
     display: inline-block;
     margin-left: 7%;
+    padding: 1%;
+    float: left;
+}
+
+.project-right{
+    width: 42%;
+    display: inline-block;
+    margin-left: 7%;
+
     padding: 1%;
 }
 
@@ -187,9 +203,20 @@
 
 
 .procDes{
-    padding: 2%;
+text-shadow: 1px;
 }
 
+.link-button{
+    border: 0;
+    border-radius: 3px;
+    background-color: #DDDEE0;
+    font-family: monospace;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    padding: 1%;
+
+}
 
 .row-port-two{
     margin-top:1%;
