@@ -87,7 +87,8 @@
 .headerBio{
     font-family: monospace;
     font-weight: bold;
-    margin-top: 40%;
+    margin-top: 38%;
+    padding: 2%;
 }
 
 
@@ -207,15 +208,20 @@ text-shadow: 1px;
 }
 
 .link-button{
-    border: 0;
+    border: solid #B8B8B9 1px;
     border-radius: 3px;
-    background-color: #DDDEE0;
+    background-color: #EFEFF0;
     font-family: monospace;
     font-weight: bold;
     color: black;
     font-size: 18px;
-    padding: 1%;
+    padding: 1.5%;
 
+}
+
+.link-button:hover{
+    cursor: pointer;
+    background-color: #FAFAFB;
 }
 
 .row-port-two{
