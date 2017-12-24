@@ -1,6 +1,6 @@
 $(".container-header").height($(window).height());
 
-
+$("#resume").width($(window).width());
 
 function scrollResume(){
     $('html, body').animate({
