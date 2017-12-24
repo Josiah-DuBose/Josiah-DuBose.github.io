@@ -1,3 +1,7 @@
+$(".container-header").height($(window).height());
+
+
+
 function scrollResume(){
     $('html, body').animate({
         scrollTop: $("#resume_section").offset().top - 5

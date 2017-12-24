@@ -21,7 +21,6 @@
 /*header section*/
 .container-header{
     background-image: url("../Background_Image.jpg");
-    height:675px;
     background-size:cover;
     background-position:center;
 }
