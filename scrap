@@ -12,3 +12,25 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal --> -->
+
+
+function scrollResume(){
+    $('html, body').animate({
+        scrollTop: $(".container-resume").offset().top
+    }, 1);
+}
+$("#resumeButton").click(scrollResume)
+
+function scrollPortfolio(){
+    $('html, body').animate({
+        scrollTop: $("#portfolio_section").offset().top
+    }, 1);
+}
+$("#projects").click(scrollPortfolio)
+
+function scrollBio(){
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 1);
+}
+$("#bioButton").click(scrollBio)
