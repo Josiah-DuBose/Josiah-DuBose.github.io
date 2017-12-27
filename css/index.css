@@ -223,6 +223,7 @@ body{
 .modal-header{
     border: 0;
     text-align: left;
+    display: block;
 }
 
 
