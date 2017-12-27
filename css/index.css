@@ -17,6 +17,7 @@ body{
     height: 100%;
     padding: 5%;
     display: none;
+    margin-top: 2%;
 }
 
 .nav{
@@ -43,11 +44,15 @@ body{
     background-color: #73a7e9;
 }
 
-.navRow{
+.nav-row{
     text-align: center;
 }
 
 /*header section*/
+
+.row.name {
+    text-align: center;
+}
 .row-home-nav{
     margin-top: 15%;
     padding:2%;
@@ -60,12 +65,9 @@ body{
 }
 
 .textPgHeader{
-    margin-top: -4.6%;
     font-family: monospace;
     color: black;
-    text-align: left;
     background-color: #73a7e9;
-    margin-left: -7.7%;
     width: -moz-fit-content;
     padding: 2%;
     border-radius: 2px;
@@ -76,18 +78,11 @@ body{
     color: black;
     font-weight: bold;
     text-align: left;
-    font-style: italic;
-    margin-left: -51%;
 }
 
-.pgheader-row{
-    text-align: center;
+.col-md-12.nav-buttons{
+    padding:1%;
 }
-
-.btn-group{
-    border: 0;
-}
-
 
 .btn.btn-default{
     border-right: solid #CACACA 1px;
