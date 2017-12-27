@@ -30,7 +30,7 @@ function loadProjects() {
 
 function prepPage() {
     $("#home").hide();
-    $(".row.nav").show();
+    $(".nav").show();
     $(".navbar-nav").find("li.active").each(function(index, element){
         $(element).removeClass("active");
     });
