@@ -4,213 +4,69 @@
         <meta charset="utf-8">
         <title>Main Page</title>
         <script src="https://use.fontawesome.com/43d98b926b.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        rel="stylesheet" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+            integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+            crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="js/reportcard/badges.css">
     </head>
     <body>
-    <div class="container-fluid">
-        <div class="container-header">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="container-info">
-                        <h1 class="textPgHeader">Josiah DuBose</h1>
-                        <h4 class="headerPage">Full Stack Web Developer</h4>
-                        <br>
-                        <div class="navRow">
-                            <div class="btn-group" role="group" aria-label="...">
-                                <button id="loadBio" class="btn btn-default">About Me</button>
-                                <button id="loadProjects" class="btn btn-default">Projects</button>
-                                <button id="loadResume" class="btn btn-default">Resume</button>
-                                <button id="contact-pop" class="btn btn-default"data-toggle="modal"
-                                    data-target="#contact_modal">Contact</button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="nav">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item home">
+                            <a id="nav-home" class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item bio">
+                            <a id="nav-bio" class="nav-link" href="#">Bio</a>
+                        </li>
+                        <li class="nav-item resume">
+                            <a id="nav-resume" class="nav-link" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item projects">
+                            <a id="nav-projects" class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item contact">
+                            <a id="contact-pop"
+                                class="nav-link"
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#contact_modal">Contact
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div> <!-- end of container one -->
-        <div class="container-bio">
-            <div class="overlay">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-row">
-                            <h1 class="text-header">Bio</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-bio">
-                    <div class="col-md-6 img-col">
-                        <img class="head-shot" src="DSC_0160 copy.jpg" alt="head-shot">
-                    </div>
-                    <div class="col-md-6 skills">
-                        <h3 class="header-skills">Skills:</h3>
-                        <p class="skills-text"> Python, Perl, JavaScript, Ember, Django, Handlebars,
-                            HTML, SQL, Rest APIs, Agile Development, Git</p>
-                    </div>
-                </div>
-                <div class="row-bio">
-                    <div class="col-md-12">
-                        <h2 class="header-bio">a little bit about me...</h2>
-                        <p class="bio-para">
-                            I'm a detailed oriented person who greatly enjoys
-                            problem solving and learning new things everyday. Currently, I'm working as
-                            a full stack web developer. Our products are large scale,
-                            web based tools that serve thousands of users from
-                            all over the world. My duties include bug fixes,
-                            story points, QAs, peer code reviews, and
-                            interviews. Prior to my current
-                            position I attended The Iron Yard's backend course
-                            with a focus in developing full stack web apps.
-                            I am interested in joining an energetic, talented team that offers
-                            new challenges daily and the opportunity
-                            to continue growing as a developer. I am able to pick up new languages
-                            and frameworks quickly, and greatly enjoy expanding my knowledge base.
-                            When I am away from the keyboard I like to
-                            spend time in the woods, play drums, or drink a
-                            good craft IPA.
-                        </p>
-                        <a href="mailto:josiah7686@gmail.com?Subject=Hello"
-                            target="_top"><button class="link-button"
-                            type="button" name="button">Email Me</button>
-                        </a>
-                        <a>
-                            <button class="link-button" type="button"
-                            data-toggle="modal" data-target="#callMeModal"
-                            name="button">Call Me</button>
-                        </a>
-                        <a href="#" target="_top">
-                            <button id="resumebutton" class="link-button"
-                            type="button" name="button">See Resume</button>
-                        </a>
-                        <div class="report-card treehouse"></div>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
-        <div class="container-resume">
-            <div class="overlay">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-row">
-                            <h1 class="text-header">Resume</h1>
-                        </div>
-                    </div>
-                </div>
+        <div id="home">
+            <div class="row-home-nav">
+                <div class="col-md-12 home">
+                    <h1 class="textPgHeader">Josiah DuBose</h1>
+                    <label class="headerPage">Full Stack Web Developer</label>
                     <br>
-                    <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <iframe id="resume" label="Resume" src="Resume_Mid_2017.pdf"></iframe>
+                    <div class="navRow">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button id="loadBio" class="btn btn-default">About Me</button>
+                            <button id="loadProjects" class="btn btn-default">Projects</button>
+                            <button id="loadResume" class="btn btn-default">Resume</button>
+                            <button id="contact-pop" class="btn btn-default"data-toggle="modal" data-target="#contact_modal">Contact</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-projects">
-            <div class="overlay">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="header-row">
-                            <h1 class="text-header">Projects</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="row-projects">
-                    <div class="col-md-6">
-                        <h3 class="header-project">Bike MD</h3>
-                        <a href="#"><img class="proc-img"
-                        src="bikeLogin.png" alt="screenshot"></a>
-                        <h4 class="proc-des">
-                            Bike MD is a community of motorcycle technicians and owners, a
-                            place where they can connect with each other and ask
-                            technical questions, browse common problems and
-                            solutions by model, and help each other troubleshoot
-                            vehicles more efficiently. This is my current side project.
-                            <br>
-                            <br>
-                            Stack: Django Rest Framework, PostgresSQL,
-                            Ember, HTML, Bootstrap, Handlebars, and Sass.
-                            <br>
-                        </h4>
-                        <a href="https://github.com/Josiah-DuBose/bike_md_frontend_ember" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">See Ember Front End</button>
-                        </a>
-                        <a href="https://github.com/Josiah-DuBose/bike_md_backend" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">See Django Back End</button>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="header-project">Movie Rater</h3>
-                        <img class="proc-img" src="movie-rater.png"
-                        alt="screenshot">
-                        <h4 class="proc-des">
-                            This was one of my first full stack assignments at TIY.
-                            It is a light weight, movie rating app. Users
-                            can browse lists of top rated movies, view other user's watch lists,
-                            or sign up for an account and add their own ratings.
-                            <br>
-                            <br>
-                            Technologies used: Django Rest Framework, JavaScript,
-                            HTML, Bootstrap, PostgresSQL, and CSS.
-                        </h4>
-                        <br>
-                        <a href="https://github.com/Josiah-DuBose/django_movies"
-                            target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">See Code</button>
-                        </a>
-                    </div>
-                </div> <!-- end of row one -->
-                <br>
-                <br>
-                <div class="row-projects">
-                    <div class="col-md-6">
-                        <h3 class="header-project">Craigslist clone</h3>
-                        <img class="proc-img" src="craigslist.png"
-                        alt="screenshot">
-                        <h4 class="proc-des">
-                            Another early project from TIY. The assignment was to create
-                            a clone of craiglist. The app has fully functioning ad
-                            posting and supports picture uploading. Click the link
-                            below to view the repo.
-                            <br>
-                            <br>
-                            Technologies used: Django, PostgresSQL, HTML, and CSS.
-                        </h4>
-                        <br>
-                        <a href="https://github.com/Josiah-DuBose/django_movies" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">See Code</button></a>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="header-project">Command Line Programs</h3>
-                        <img class="proc-img" src="terminal.png"
-                        alt="screenshot">
-                        <h4 class="proc-des">
-                            During the course of my Python trainning I've built many
-                            CLI programs. Below are a few links to the repos that contain
-                            some of the more useful programs.
-                        </h4>
-                        <br>
-                        <a href="https://github.com/Josiah-DuBose/express_yourself" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">Regex TDD</button>
-                        </a>
-                        <a href="https://github.com/Josiah-DuBose/currency-converter" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">Currency Converter</button>
-                        </a>
-                        <a href="https://github.com/Josiah-DuBose/black_jack" target="_top">
-                            <button class="link-button" type="button"
-                            name="button" target="_blank">Black Jack</button>
-                        </a>
-                    </div>
-                </div> <!-- end row two -->
-            </div> <!-- end project section -->
-        </div>
+        <div class="container-fluid"></div>
+
         <!--Modals-->
         <div class="modal fade" id="contact_modal">
             <div class="modal-dialog" role="document">
@@ -256,6 +112,7 @@
                 </div>
             </div>
         </div> <!-- end modal -->
+
         <div class="modal fade" id="callMeModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -275,16 +132,19 @@
                 </div>
             </div>
         </div> <!-- end modal -->
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script src="js/index.js"></script>
-            <script src="js/reportcard/reportcard.js"></script>
-            <script>
-                $('.report-card.treehouse').reportCard({
-                    userName: 'josiahdubose',
-                    site: 'treehouse',
-                    badgesAmount: 10
-                });
-            </script>
+
+
+        <script  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/reportcard/reportcard.js"></script>
+        <script>
+            $('.report-card.treehouse').reportCard({
+                userName: 'josiahdubose',
+                site: 'treehouse',
+                badgesAmount: 10
+            });
+        </script>
     </body>
 </html>
