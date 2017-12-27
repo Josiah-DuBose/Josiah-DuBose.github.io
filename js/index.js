@@ -8,12 +8,6 @@ $(document).ready(function() {
         $("#home").show();
         $(".nav").hide();
     });
-    $("#contact-pop").click(function() {
-        $(".navbar-nav").find("li.active").each(function(index, element){
-            $(element).removeClass("active");
-        });
-        $(".nav-item.contact").addClass(" active");
-    });
 });
 
 function loadBio() {
