@@ -19,7 +19,9 @@ function loadBio() {
 function loadResume() {
     prepPage();
     $(".nav-item.resume").addClass(' active');
-    $(".container-fluid").load('partials/resume.html');
+    $(".container-fluid").load('partials/resume.html', function() {
+        $("#resume").height($(window).height());
+    });
 }
 
 function loadProjects() {
