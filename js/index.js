@@ -3,10 +3,10 @@ $(document).ready(function() {
     $("#loadResume, #nav-resume").click(loadResume);
     $("#loadProjects, #nav-projects").click(loadProjects);
     $("#home").show();
-    $(document).prop('title', 'Home');
     $("#nav-home").click(() => {
         $(".container-fluid").hide();
         $("#home").show();
+        $(document).prop('title', 'Home');
         $(".nav").hide();
     });
 });
