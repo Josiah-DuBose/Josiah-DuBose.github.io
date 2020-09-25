@@ -1,7 +1,8 @@
 /*header, body and text formating for entire page */
-body{
+body {
     background-image: url("../images/Background_Image.jpg");
-    background-size:cover;
+    max-width: 100%;
+    height: auto;
 }
 .row.header-row{
     text-align: left;
